@@ -13,7 +13,7 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <article class="article">
+    <header>
         <nav class="navbar">
             <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
             <ul>
@@ -54,25 +54,32 @@
                 </li>
             </ul>
         </nav>
-        <section class="clanek">
-            <h2>
-                Maps
-            </h2>
-            <p>
-                For playing multiplayer you need maps. 
-            </p>
-            <p>
-                Here are the some link where is maps available to download.
-            </p>
-            <p class="button" onclick="window.open('https://www.mediafire.com/file/e8kc7cufvs75phr/vietcong_coop_maps.rar')">
-                Coop maps [MediaFire]
-            </p>
-        </section>
-        <footer class="footer">
-            <p>
-                &copy; 2024 by KralicekGamer
-            </p>
-        </footer>
-    </article>
+    </header>
+    <section class="clanek">
+        <article>
+            <header>
+                <h2>
+                    Maps
+                </h2>
+            </header>
+            <section>
+                <p>
+                    For playing multiplayer you need maps.
+                </p>
+                <p>
+                    Here are the some link where is maps available to download.
+                </p>
+                <p class="button"
+                    onclick="window.open('https://www.mediafire.com/file/e8kc7cufvs75phr/vietcong_coop_maps.rar')">
+                    Coop maps [MediaFire]
+                </p>
+            </section>
+        </article>
+    </section>
+    <footer class="footer">
+        <p>
+            &copy; 2024 by KralicekGamer
+        </p>
+    </footer>
 </body>
 </html>
