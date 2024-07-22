@@ -76,13 +76,15 @@ body {
 }
 
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
-    position: fixed;
     width: 100%;
+    position: fixed;
     bottom: 0;
-    left: 0;
 }
 
 .footer p {
