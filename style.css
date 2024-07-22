@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('bg.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.7); 
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li p {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px 15px;
+    color: white;
+    text-align: center;
+}
+
+.navbar ul li p:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    flex: 1;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.btn p {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.btn p:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.clanek {
+    text-align: left;
+    max-width: 800px;
+}
+
+.button {
+    color: rgb(29, 146, 255);
+    text-decoration: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
