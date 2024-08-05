@@ -18,7 +18,7 @@ h1 {
     font-size: 45px;
 }
 
-.navbar {
+nav {
     background: rgba(0, 0, 0, 0.7);
     position: fixed;
     width: 100%;
@@ -28,7 +28,7 @@ h1 {
     z-index: 1000;
 }
 
-.navbar ul {
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -36,11 +36,11 @@ h1 {
     justify-content: center;
 }
 
-.navbar ul li {
+nav ul li {
     margin: 0 15px;
 }
 
-.navbar ul li p {
+nav ul li p {
     cursor: pointer;
     margin: 0;
     padding: 10px 15px;
@@ -48,7 +48,7 @@ h1 {
     text-align: center;
 }
 
-.navbar ul li p:hover {
+nav ul li p:hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
@@ -65,12 +65,12 @@ h1 {
 }
 
 
-.clanek {
+section {
     text-align: left;
     max-width: 800px;
 }
 
-.footer {
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +82,7 @@ h1 {
     bottom: 0;
 }
 
-.footer p {
+footer p {
     margin: 0;
 }
 
@@ -116,32 +116,32 @@ h1 {
 
 
 @media (max-width: 900px) {
-    .clanek {
+    section {
         padding-left: 5px;
     }
 
-    .navbar {
+    nav {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .navbar ul {
+    nav ul {
         flex-direction: column;
         width: 100%;
         display: none;
         background: rgba(0, 0, 0, 0.7);
     }
 
-    .navbar ul.show {
+    nav ul.show {
         display: flex;
     }
 
-    .navbar ul li {
+    nav ul li {
         margin: 0;
         width: 100%;
     }
 
-    .navbar ul li p {
+    nav ul li p {
         padding: 15px;
         text-align: left;
     }
