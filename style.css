@@ -119,6 +119,11 @@ a {
     color: rgb(80, 135, 255);
 }
 
+#trailer {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
 @media screen and (max-width: 768px) {
     nav {
         display: flex;
