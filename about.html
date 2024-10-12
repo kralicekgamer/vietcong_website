@@ -14,12 +14,16 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> 
+            <ul id="nav-links">
                 <li>
                     <a href="./index.html">Vietcong</a>
                 </li>
                 <li>
                     <a href="./about.html">About game</a>
+                </li>
+                <li>
+                    <a href="./multiplayer.html">Multiplayer fix</a>
                 </li>
                 <li>
                     <a href="./maps.html">Maps</a>
@@ -30,27 +34,28 @@
                 <li>
                     <a href="./vccomhub.html">VcComHub</a>
                 </li>
-                <li>
-                    <a href="https://floxen.lol">Our Server</a>
-                </li>
             </ul>
         </nav>
     </header>
+    
     <section>
         <article>
+            <h2>Vietcong: A Tactical First-Person Shooter Set in the Vietnam War</h2>
+            <p>"Vietcong" is a tactical first-person shooter video game developed by Pterodon and Illusion Softworks, and published by Gathering for Microsoft Windows in 2003. The game is set during the Vietnam War in 1967 and follows a team of U.S. Special Forces soldiers on various combat missions against the Viet Cong.</p>
+            <p>Players engage in realistic environments and tactical gameplay, commanding up to six expertly trained soldiers through 20 dramatic missions. The game features a wide range of weapons, including M16s, grenade launchers, and sniper rifles, and allows players to order air strikes or ambush enemy patrols. The full-featured multiplayer mode lets gamers play as either U.S. Special Forces or Vietcong soldiers.</p>
+            <p>Despite some technical issues, "Vietcong" received positive reviews for its atmosphere and attention to detail. It also spawned an expansion pack, "Vietcong: Fist Alpha," and a sequel, "Vietcong 2," released in 2005.</p>
+            <p>To mark the 20th anniversary of its release, the game received a remaster with updated graphics, paying tribute to one of the best Czech games ever made.</p>
+
+
             <h2>
-                About Vietcong
+                Official Trailer
             </h2>
-            <p>
-                Vietcong is a first-person shooter game developed by Pterodon and Illusion Softworks, released in
-                2003.
-                Set during the Vietnam War, players take on the role of Sergeant First Class Steve R. Hawkins,
-                leading a
-                U.S. Special Forces team through various jungle missions. The game emphasizes realism with authentic
-                weapons, equipment, and environments, and focuses on team-based tactics, allowing players to command
-                their squad members effectively. The immersive storyline and atmospheric setting provide a gripping
-                depiction of the war's challenges and intensity.
-            </p>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/o1_2O7n2xbQ" title="Vietcong Trailers (2003) in 4K Resolution" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h2>Sources</h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Vietcong_%28video_game%29">Vietcong (video game) - Wikipedia</a></li>
+                <li><a href="https://www.moddb.com/games/vietcong">Vietcong Windows, RTX game - ModDB</a></li>
+            
         </article>
     </section>
     <footer>
@@ -58,5 +63,11 @@
             &copy; 2024 by KralicekGamer
         </p>
     </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>      
 </body>
 </html>

@@ -14,12 +14,16 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> 
+            <ul id="nav-links">
                 <li>
                     <a href="./index.html">Vietcong</a>
                 </li>
                 <li>
                     <a href="./about.html">About game</a>
+                </li>
+                <li>
+                    <a href="./multiplayer.html">Multiplayer fix</a>
                 </li>
                 <li>
                     <a href="./maps.html">Maps</a>
@@ -30,12 +34,10 @@
                 <li>
                     <a href="./vccomhub.html">VcComHub</a>
                 </li>
-                <li>
-                    <a href="https://floxen.lol">Our Server</a>
-                </li>
             </ul>
         </nav>
     </header>
+    
     <section>
         <article>
             <h2>
@@ -44,9 +46,9 @@
             <p>
                 Vietcong allows adding addons to the game
             </p>
-            <h3>
-                How to add addon?
-            </h3>
+            <h2>
+                How to add addon? 
+            </h2>
             <ol>
                 <li>
                     Download addon
@@ -55,23 +57,27 @@
                     Extract addon to addons folder (If doesn't exists, create it)
                 </li>
                 <li>
-                    Open <a href="./vccomhub.html">VcComHub</a> and hit "quick play" button, and
-                    choose
-                    addon
+                    Open <a href="./vccomhub.html">VcComHub</a> and hit "quick play" button, and choose addon
                 </li>
             </ol>
+            <h2>
+                Some of addons
+            </h2>
             <p>
-                Here is some list of addons:
+                <a href="https://drive.google.com/file/d/1BBTYyjcWniVqbpHGqWDCEVpZG1aJx5_I/view?usp=sharing">
+                    FistAplha [GD]
+                </a>
             </p>
-            <a href="https://drive.google.com/file/d/1BBTYyjcWniVqbpHGqWDCEVpZG1aJx5_I/view?usp=sharing">
-                FistAplha [GD]
-            </a>
-            <a href="https://drive.google.com/file/d/1VcauUb8TMzSmsbdOYjCkcgdHKPg-Rxkx/view?usp=sharing">
-                RedDawn [GD]
-            </a>
-            <a href="https://drive.google.com/file/d/1oANySPbnyLNydBlubRVS3S9Kwhbh_Aza/view?usp=sharing">
-                ZuluAddon [GD]
-            </a>
+            <p>
+                <a href="https://drive.google.com/file/d/1VcauUb8TMzSmsbdOYjCkcgdHKPg-Rxkx/view?usp=sharing">
+                    RedDawn [GD]
+                </a>
+            </p>
+            <p>
+                <a href="https://drive.google.com/file/d/1oANySPbnyLNydBlubRVS3S9Kwhbh_Aza/view?usp=sharing">
+                    ZuluAddon [GD]
+                </a>
+            </p>
         </article>
     </section>
     <footer>
@@ -79,5 +85,11 @@
             &copy; 2024 by KralicekGamer
         </p>
     </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>      
 </body>
 </html>

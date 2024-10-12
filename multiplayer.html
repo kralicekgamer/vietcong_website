@@ -10,8 +10,6 @@
         Vietcong
     </title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -39,30 +37,43 @@
             </ul>
         </nav>
     </header>
-    
-    <section id="main">
+    <section>
         <article>
-            <h1>
-                Vietcong 1
-            </h1>
-            <div>
-                <a href="https://cdn.pavelkalas.xyz/vietcong.7z">
-                    Download
-                </a>
-                <a href="./about.html">
-                    About game
-                </a>
-            </div>
+            <h2>Vietcong Server List Fix</h2>
+            <p>GameSpy has discontinued its support for Vietcong, which means no servers will appear in the in-game server list. However, you can still host servers and connect directly to them.</p>
+            <p><strong>If you use <a href="vccomhub.html">VcComHub, this fix is in common.</a></strong></p>
+            
+            <h3>How to fix?</h3>
+            <ol>
+                <li>
+                    Copy to desktop file <code>C:\WINDOWS\system32\drivers\etc\hosts</code>
+                </li>
+                <li>
+                    Add <code>46.28.109.117 master.gamespy.com</code>
+                </li>
+                <li>
+                    Save file and paste it back
+                </li>
+            </ol>
+            
+            <h3>For Server Hosts</h3>
+            <p>If you host a server, you must also apply this change; otherwise, your server won't appear in the list. If desired, you can still use the old Qtracker IP:</p>
+            <p><code>65.112.87.186 master.gamespy.com</code></p>
+            
+            <h3>Note on Qtracker</h3>
+            <p>Qtracker's master server is still functional but its future is uncertain. Vietcong1.eu provides an open-source alternative, and multiple master servers can synchronize lists to form a network.</p>
         </article>
     </section>
     <footer>
-        <p>&copy; 2024 by KralicekGamer</p>
+        <p>
+            &copy; 2024 by KralicekGamer
+        </p>
     </footer>
     <script>
         function toggleMenu() {
             const nav = document.querySelector('nav');
             nav.classList.toggle('active');
         }
-    </script>          
+    </script>      
 </body>
 </html>
