@@ -91,6 +91,12 @@ article > h2, h3 {
     margin-top: 15px;
 }
 
+article > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
 
 ul {
     display: flex;
