@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+section {
+    padding: 20px;
+    flex: 1;
+}
+
+h1 {
+    margin-right: auto;
+}
+
+img {
+    height: 60px;
+}
+
+article {
+    padding: 10px;
+}
+
+article h2 {
+    margin-bottom: 10px;
+}
+
+article small {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+

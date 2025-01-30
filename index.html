@@ -3,59 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website about legendary game Vietcong 1. Join to our Vietcong community!">
-    <meta name="keywords" content="vietcong, vietcong1, vietcong download, vietcong maps download, vietcong addons, vietcong addons download, about vietcong">
-    <meta name="author" content="KralicekGamer">
-    <title>
-        Vietcong
-    </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vietcong Website</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> 
-            <ul id="nav-links">
-                <li>
-                    <a href="./index.html">Vietcong</a>
-                </li>
-                <li>
-                    <a href="./about.html">About game</a>
-                </li>
-                <li>
-                    <a href="./multiplayer.html">Multiplayer fix</a>
-                </li>
-                <li>
-                    <a href="./maps.html">Maps</a>
-                </li>
-                <li>
-                    <a href="./addons.html">Addons</a>
-                </li>
-                <li>
-                    <a href="https://github.com/pavelkalas/vccomhub" target="_blank">VcComHub</a>
-                </li>
-            </ul>
+        <h1>
+            <a href="./index.html">
+                Vietcong
+            </a>
+        </h1>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="dropdown dropdown-hamburger">
+                    <button class="btn" type="button" id="hamburgerMenu" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        &equiv;
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="hamburgerMenu" style="background-color: #6f7f5a; border: 1px solid #ad9a2b;">
+                        <li><a class="dropdown-item" href="about.html">About Game</a></li>
+                        <li><a class="dropdown-item" href="multiplayer.html">Muliplayer Fix</a></li>
+                        <li><a class="dropdown-item" href="downloads.html">Downloads</a></li>
+                        <li><a class="dropdown-item" href="faq.html">FaQ</a></li>
+                        <li><a class="dropdown-item" target="_blank" href="https://vietcong1.eu/">Server List</a></li>
+                    </ul>
+                </div>
+                <div class="nav-links">
+                    <a href="about.html" class="nav-link d-inline">About Game</a>
+                    <a href="multiplayer.html" class="nav-link d-inline">Multiplayer Fix</a>
+                    <a href="downloads.html" class="nav-link d-inline">Downloads</a>
+                    <a href="faq.html" class="nav-link d-inline">FaQ</a>
+                    <a href="https://vietcong1.eu/" target="_blank" class="nav-link d-inline">Server List</a>
+                </div>
+            </div>
         </nav>
     </header>
-    
-    <section id="main">
-        <article>
-            <h1>
-                Vietcong 1
-            </h1>
-            <div>
-                <a href="https://cdn.pavelkalas.xyz/files/2024/7z/vietcong.7z">
-                    Download
-                </a>
-                <a href="./about.html">
-                    About game
-                </a>
-            </div>
+    <section>
+        <article id="index">
+            <h2>
+                Vietcong
+            </h2>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="download-link:DD">Download</a>
+                </li>
+                <li>
+                    <a href="./about.html">About Game</a>
+                </li>
+            </ul>
         </article>
     </section>
     <footer>
-        <p>&copy; 2024 by KralicekGamer</p>
+        <p>
+            <small>
+                &copy; 2025 by KralicekGamer. This is not an official website of Vietcong. 
+            </small>
+        </p>
     </footer>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

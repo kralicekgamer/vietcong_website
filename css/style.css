@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #6f7f5a; 
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Sans', 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #ddc02e;
+}
+
+section h2 {
+    color: #ceb387;
+}
+
+p {
+    color: #FCFAEE;
+}
+
+
+.nav-links, .dropdown-menu li a {
+    display: flex;  
+    gap: 20px;
+    color: #ddc02e;
+    background-color: #6f7f5a; 
+}
+
+.nav-links a {
+    font-size: 17px;
+}
+
+.dropdown button {
+    font-size: 1.5em; 
+    color: #ddc02e;
+}
+
+p small {
+    color: #ceb387;
+}
+
+ul, ol {
+    color: #FCFAEE;
+}
+
+.link {
+    color: #cfc5b3;
+}
+
+article code {
+    color: #FCFAEE;
+    background-color: #53643d5a;
+    border-radius: 69px;
+}
+
+article h3 {
+    color: #ceb387;
+}
+
+.dropdown-hamburger:hover {
+    color: #ddc02e;
+}

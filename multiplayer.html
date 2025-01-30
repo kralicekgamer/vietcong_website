@@ -3,49 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website about legendary game Vietcong 1. Join to our Vietcong community!">
-    <meta name="keywords" content="vietcong, vietcong1, vietcong download, vietcong maps download, vietcong addons, vietcong addons download, about vietcong">
-    <meta name="author" content="KralicekGamer">
-    <title>
-        Vietcong
-    </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vietcong Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> 
-            <ul id="nav-links">
-                <li>
-                    <a href="./index.html">Vietcong</a>
-                </li>
-                <li>
-                    <a href="./about.html">About game</a>
-                </li>
-                <li>
-                    <a href="./multiplayer.html">Multiplayer fix</a>
-                </li>
-                <li>
-                    <a href="./maps.html">Maps</a>
-                </li>
-                <li>
-                    <a href="./addons.html">Addons</a>
-                </li>
-                <li>
-                    <a href="https://github.com/pavelkalas/vccomhub" target="_blank">VcComHub</a>
-                </li>
-            </ul>
+        <h1>
+            <a href="./index.html">
+                Vietcong
+            </a>
+        </h1>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="dropdown dropdown-hamburger">
+                    <button class="btn" type="button" id="hamburgerMenu" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        &equiv;
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="hamburgerMenu" style="background-color: #6f7f5a; border: 1px solid #ad9a2b;">
+                        <li><a class="dropdown-item" href="about.html">About Game</a></li>
+                        <li><a class="dropdown-item" href="multiplayer.html">Muliplayer Fix</a></li>
+                        <li><a class="dropdown-item" href="downloads.html">Downloads</a></li>
+                        <li><a class="dropdown-item" href="faq.html">FaQ</a></li>
+                        <li><a class="dropdown-item" target="_blank" href="https://vietcong1.eu/">Server List</a></li>
+                    </ul>
+                </div>
+                <div class="nav-links">
+                    <a href="about.html" class="nav-link d-inline">About Game</a>
+                    <a href="multiplayer.html" class="nav-link d-inline">Multiplayer Fix</a>
+                    <a href="downloads.html" class="nav-link d-inline">Downloads</a>
+                    <a href="faq.html" class="nav-link d-inline">FaQ</a>
+                    <a href="https://vietcong1.eu/" target="_blank" class="nav-link d-inline">Server List</a>
+                </div>
+            </div>
         </nav>
     </header>
     <section>
         <article>
-            <h2>Vietcong Server List Fix</h2>
-            <p>GameSpy has discontinued its support for Vietcong, which means no servers will appear in the in-game server list. However, you can still host servers and connect directly to them.</p>
-            
-            <h3>How to fix?</h3>
+            <h2>
+                Vietcong Server List Fix
+            </h2>
+            <p>
+                GameSpy has discontinued its support for Vietcong, which means no servers will appear in the in-game server list. However, you can still host servers and connect directly to them.
+            </p>
+            <h3>
+                How to fix?
+            </h3>
             <ol>
                 <li>
-                    Copy to desktop file <code>C:\WINDOWS\system32\drivers\etc\hosts</code>
+                    Copy to desktop file C:\WINDOWS\system32\drivers\etc\hosts
                 </li>
                 <li>
                     Add <code>46.28.109.117 master.gamespy.com</code>
@@ -57,20 +66,24 @@
                     Open terminal and enter <code>ipconfig /flushdns</code>
                 </li>
             </ol>
-            
-            <h3>For Server Hosts</h3>
-            <p>If you host a server, you must also apply this change; otherwise, your server won't appear in the list. If desired, you can still use the old Qtracker IP:</p>
-            <p><code>65.112.87.186 master.gamespy.com</code></p>
-            
-            <h3>Note on Qtracker</h3>
-            <p>Qtracker's master server is still functional but its future is uncertain. Vietcong1.eu provides an open-source alternative, and multiple master servers can synchronize lists to form a network.</p>
+            <h3>
+                For Server Hosts
+            </h3>
+            <p>
+                If you host a server, you must also apply this change; otherwise, your server won't appear in the list. If desired, you can still use the old Qtracker IP: <code>65.112.87.186 master.gamespy.com</code>
+            </p>
+            <p>
+                Qtracker's master server is still functional but its future is uncertain. Vietcong1.eu provides an open-source alternative, and multiple master servers can synchronize lists to form a network.
+            </p>
         </article>
     </section>
     <footer>
         <p>
-            &copy; 2024 by KralicekGamer
+            <small>
+                &copy; 2025 by KralicekGamer. This is not an official website of Vietcong. 
+            </small>
         </p>
     </footer>
-    <script src="script.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
